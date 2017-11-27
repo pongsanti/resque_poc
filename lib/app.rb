@@ -1,6 +1,7 @@
 require 'sinatra/base'
 require 'resque'
 require_relative './db/connection'
+require_relative './db/post'
 require_relative './task/update_status'
 
 Resque.redis = ENV['REDIS']

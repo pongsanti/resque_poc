@@ -12,5 +12,3 @@ LOG = Logger.new(STDOUT)
 DB = Sequel.connect("postgres://#{USER}:#{PASS}@#{HOST}/#{DBNAME}",
   max_connections: 10)
 DB.loggers << LOG
-
-require_relative './post'
